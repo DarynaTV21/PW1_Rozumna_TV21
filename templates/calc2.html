@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#16222A,#3A6073);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    width:420px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+h2{
+    text-align:center;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:6px 0 14px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#3A6073;
+    color:white;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#16222A;
+}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    text-decoration:none;
+    color:#3A6073;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Калькулятор для перерахунку елементарного складу та нижчої теплоти згоряння мазуту</h2>
+
+<form action="/calc2/result" method="post">
+
+Hg % <input name="hg">
+Cg % <input name="cg">
+Sg % <input name="sg">
+Og % <input name="og">
+Vg мг/кг <input name="vg">
+Wg % <input name="wg">
+Ag % <input name="ag">
+Q горючої маси <input name="x">
+
+<button type="submit">Розрахувати</button>
+
+</form>
+
+<a class="back" href="/">Назад</a>
+
+</div>
+
+</body>
+</html>
